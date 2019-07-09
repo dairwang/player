@@ -2,8 +2,9 @@
   <div id="app">
     <!-- 入口 -->
     <!-- 出口 -->
-    <!-- <router-view></router-view> -->
+ 
     <searchBar></searchBar>
+      <router-view></router-view>
   </div>
 </template>
 

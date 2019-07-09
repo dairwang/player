@@ -20,7 +20,15 @@ export default {
     },
 methods: {
     searchMusic(){
-        // this.$router.push(`/search/${this.search}`)
+        if(this.search==''){
+            // 使用饿了么UI 的一个插件来提示  按照文档复制过来
+        this.$message({
+          message: '搜索不能为空哦',
+          type: 'warning'
+        });
+        }else{
+            this.$router.push(`/result/${this.search}`)
+        }
     }
 },
 }
